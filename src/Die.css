@@ -1,0 +1,31 @@
+.Die-dice-position {
+	display: inline;
+	font-size: 10rem;
+}
+
+.Die-dice-position:not(:last-child) {
+	margin-right: 3%;
+}
+
+.fas {
+	color: rgb(201, 56, 201);
+}
+
+.fas-animate {
+	animation-name: leftRight;
+	animation-duration: 0.25s;
+	animation-timing-function: linear;
+	animation-iteration-count: 4;
+}
+
+@keyframes leftRight {
+	25% {
+		transform: translate(-2rem, 0.5rem);
+	}
+	50% {
+		transform: translate(0, 0);
+	}
+	75% {
+		transform: translate(2rem, 0.5rem);
+	}
+}
